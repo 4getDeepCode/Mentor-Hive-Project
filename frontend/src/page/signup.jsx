@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import auth from '../apiManager/auth'
+import auth from '../apiManager/auth'
 import { NavLink, useNavigate, useParams } from 'react-router-dom'
 import { useForm } from "react-hook-form";
 import toast from 'react-hot-toast';
@@ -7,8 +7,10 @@ const Signup = () => {
   const { role } = useParams();
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
+
   const heading =
     role === "mentor" ? "Sign Up as Mentor" : "Sign Up as Student";
+    
   const onSubmit = async (data) => {
     setIsLoading(true);
     const formData = {
