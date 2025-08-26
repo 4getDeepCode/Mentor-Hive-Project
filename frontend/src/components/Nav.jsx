@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const Nav = () => {
 
+  const navigate = useNavigate();
+  const signUpStudentBtnClick = () => navigate("/signup/student")
+  const signUpMentorBtnClick = () => navigate("/signup/mentor");
+  const signInBtnClick = () => navigate("/signin")
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 
@@ -26,7 +30,7 @@ const Nav = () => {
             <ul className="items-center hidden space-x-8 lg:flex">
               <li>
                 <button
-
+                  onClick={signUpMentorBtnClick}
                   className="h-12 px-6 font-medium tracking-wide text-gray border-4 border-green-500 bg-green-500 rounded-md hover:bg-green-600 transition-all duration-300 hover:text-white"
                 >
                   Become a Mentor with Us
@@ -35,6 +39,7 @@ const Nav = () => {
               <li>
                 <button
 
+                  onClick={signInBtnClick}
                   className="font-medium tracking-wide text-green-500 hover:text-green-700 transition-all duration-300"
                 >
                   Sign in
@@ -42,7 +47,7 @@ const Nav = () => {
               </li>
               <li>
                 <button
-
+                onClick={signUpStudentBtnClick}
                   className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white bg-green-500 rounded-md hover:bg-green-600 transition-all duration-300"
                 >
                   Sign up
