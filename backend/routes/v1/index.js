@@ -3,8 +3,8 @@ const router=express.Router();
 const authRoute=require('./auth.route');
 const homeRoute=require("./home.route");
 const mentorRoute=require("./mentor.route");
-const serviceRoute=require("./service.route");
-const paymentRoute=require("./payment.route");
+// const serviceRoute=require("./service.route");
+// const paymentRoute=require("./payment.route");
 
 
 const Routes=[
@@ -20,14 +20,14 @@ const Routes=[
         path:"/mentor",
         route:mentorRoute
     },
-    {
-        path:"/service",
-        route:serviceRoute
-    },
-    {
-        path:"/payment",
-        route:paymentRoute
-    },
+    // {
+    //     path:"/service",
+    //     route:serviceRoute
+    // },
+    // {
+    //     path:"/payment",
+    //     route:paymentRoute
+    // },
  
     
 ];
