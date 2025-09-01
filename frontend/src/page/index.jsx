@@ -16,6 +16,7 @@ const Home = () => {
             <Nav />
 
             <div className="bg-white">
+
                 {/* Hero Section */}
                 <section className="relative bg-green-100 py-16 px-6 md:py-24">
                     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
@@ -51,6 +52,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
                 {/* About Section */}
                 <section className="bg-[#F9F9F9]">
                     <div className="px-6 py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-28 lg:px-10 lg:py-24">
@@ -281,6 +283,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                
                 {/* Mentor Categories Section */}
                 <section className="px-8 py-20 bg-gray-100">
                     <div className="container mx-auto">

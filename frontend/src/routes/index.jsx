@@ -11,9 +11,6 @@ const routes = [
     isProtected:false
   },
 
-
-
 ]
-
 
 export default routes;
